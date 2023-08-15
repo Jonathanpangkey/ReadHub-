@@ -34,6 +34,7 @@ const AppProvider = ({children}) => {
 
                 if(newBooks.length > 1){
                     setResultTitle("Your Search Result");
+                    console.log(`${URL}${searchTerm}`)
                 } else {
                     setResultTitle("No Search Result Found!")
                 }
