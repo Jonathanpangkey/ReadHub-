@@ -39,6 +39,19 @@
     font-style: italic;
     font-size: 14px;
 }
+.recommendation-list {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.recommendation-list span:hover {
+    color: var(--blue-color);
+}
 
 @media screen and (min-width: 600px){
     .booklist-content{

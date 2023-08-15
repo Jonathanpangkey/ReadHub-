@@ -4,7 +4,7 @@ const URL = "http://openlibrary.org/search.json?title=";
 const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
-    const [searchTerm, setSearchTerm] = useState("");
+    const [searchTerm, setSearchTerm] = useState("the lost world");
     const [books, setBooks] = useState([]);
     const [loading, setLoading] = useState(true);
     const [resultTitle, setResultTitle] = useState("");
@@ -34,7 +34,6 @@ const AppProvider = ({children}) => {
 
                 if(newBooks.length > 0){
                     setResultTitle("Your Search Result");
-                    console.log(`${URL}${searchTerm}`)
                 } else {
                     setResultTitle("No Search Result Found!")
                 }
@@ -44,7 +43,6 @@ const AppProvider = ({children}) => {
             }
             setLoading(false);
         } catch(error){
-            console.log(error);
             setLoading(false);
         }
     }, [searchTerm]);

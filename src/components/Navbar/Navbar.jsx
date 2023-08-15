@@ -33,12 +33,13 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
+            <br />
             <li className='nav-item'>
               <Link to='about' className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>
                 about
               </Link>
             </li>
-            <div class='nav-item'>
+            {/* <div class='nav-item'>
               <button class='dropbtn nav-link text-uppercase text-white fs-22 fw-6 ls-1'>Dropdown</button>
               <div class='dropdown-content'>
                 <a href='/' class='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>
@@ -51,7 +52,7 @@ const Navbar = () => {
                   Link 3
                 </a>
               </div>
-            </div>
+            </div> */}
           </ul>
         </div>
       </div>

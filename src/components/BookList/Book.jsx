@@ -3,13 +3,15 @@ import {Link} from "react-router-dom";
 import "./BookList.css";
 
 const Book = (book) => {
+  const authors = book.author ? book.author.join(", ") : book.authors ? book.authors.map((author) => author.name).join(", ") : "";
+
   return (
     <div className='book-item flex flex-column flex-sb'>
       <div className='book-item-img'>
         <img src={book.cover_img} alt='cover' />
       </div>
       <div className='book-item-info text-center'>
-        <Link to={`/book/${book.id}`} {...book}>
+        <Link to={`/book/${book.id}`}>
           <div className='book-item-info-item title fw-7 fs-18'>
             <span>{book.title}</span>
           </div>
@@ -17,7 +19,7 @@ const Book = (book) => {
 
         <div className='book-item-info-item author fs-15'>
           <span className='text-capitalize fw-7'>Author: </span>
-          {book.author ? <span>{book.author.join(", ")}</span> : <span>No Author Available</span>}
+          {authors ? <span>{authors}</span> : <span>No Author Available</span>}
         </div>
 
         <div className='book-item-info-item edition-count fs-15'>
