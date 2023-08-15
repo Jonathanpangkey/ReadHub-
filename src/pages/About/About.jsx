@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./About.css";
 import aboutImg from "../../images/about-img.jpg";
 
@@ -12,17 +12,29 @@ const About = () => {
 
         <div className='about-content grid'>
           <div className='about-img'>
-            <img src = {aboutImg} alt = "" />
+            <img src={aboutImg} alt='' />
           </div>
           <div className='about-text'>
-            <h2 className='about-title fs-26 ls-1'>About BookHub</h2>
-            <p className='fs-17'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dignissimos consequuntur vero commodi provident maiores, iusto atque corrupti voluptate vel sequi consectetur unde aliquam corporis saepe animi non, tempora reiciendis molestias sed laudantium dolores. Assumenda aperiam fuga quo voluptate commodi ullam aliquam expedita voluptas delectus.</p>
-            <p className='fs-17'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, dicta, possimus inventore eveniet atque voluptatibus repellendus aspernatur illo aliquam dignissimos illum. Commodi, porro omnis dolore amet neque modi quas eum!</p>
+            <h2 className='about-title fs-26 ls-1'>
+              About <span className='text-blue'>BookHub</span>
+            </h2>
+            <p className='fs-17'>
+              Welcome to BookHub, your ultimate destination for exploring the literary world! Our innovative book app provides you with a seamless and
+              enriching experience to dive into the realm of books. With BookHub, you can effortlessly search for a wide array of books using the Open
+              Library API, allowing you to access a vast collection of titles and their intricate details at your fingertips. Whether you're seeking
+              classic literature, contemporary fiction, or insightful non-fiction, our platform caters to diverse reading preferences. But that's not
+              all.
+            </p>
+            <p className='fs-17'>
+              BookHub goes beyond mere searching. Our recommendation feature utilizes the power of subject-based suggestions, helping you discover new
+              reads that align with your interests. Embark on a journey of literary exploration with BookHub and unlock a world of knowledge and
+              imagination like never before. Happy reading!
+            </p>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
