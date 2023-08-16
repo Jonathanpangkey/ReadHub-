@@ -5,6 +5,7 @@ import coverImg from "../../images/cover_not_found.jpg";
 import "./BookDetails.css";
 import {FaArrowLeft} from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 const URL = "https://openlibrary.org/works/";
 
@@ -80,7 +81,9 @@ const BookDetails = () => {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
+      
     </section>
   )
 }
