@@ -34,8 +34,8 @@ const BookList = () => {
         <Link to={`/recommendation/self-improvement`}>
           <span>self improvement</span>
         </Link>
-        <Link to={`/recommendation/history`}>
-          <span>history</span>
+        <Link to={`/recommendation/science`}>
+          <span>science</span>
         </Link>
       </div>
       <div className='container'>
